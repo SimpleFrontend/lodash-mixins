@@ -1,5 +1,5 @@
-var mixins = require('.');
+import * as _ from '.';
 
 test('mixins can be imported', () => {
-  expect(mixins).toBeDefined();
+  expect(_).toBeDefined();
 });

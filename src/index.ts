@@ -1,6 +1,9 @@
-var _ = require('lodash');
-var assignAsNew = require('./assignAsNew');
+import * as _ from 'lodash';
+import assignAsNew from './assignAsNew';
+import LodashMixins from './lodash-mixins.interface';
 
-module.exports = _.mixin({
+const mixins = <LodashMixins>_.mixin({
   assignAsNew
 });
+
+export = mixins;
