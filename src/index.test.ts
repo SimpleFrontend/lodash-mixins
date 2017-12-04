@@ -1,5 +1,5 @@
-const mixins = require('.');
+var mixins = require('.');
 
-test('mixins should be instantiated', () => {
-  expect(mixins).toBeTruthy();
+test('mixins can be imported', () => {
+  expect(mixins).toBeDefined();
 });

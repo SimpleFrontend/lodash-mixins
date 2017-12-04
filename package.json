@@ -6,7 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/hmch17/lodash-mixins.git"
   },
-  "keywords": ["lodash", "mixins"],
+  "keywords": [
+    "lodash",
+    "mixins"
+  ],
   "author": "Huang-Ming Chang (https://github.com/hmch17)",
   "license": "ISC",
   "bugs": {
@@ -16,14 +19,19 @@
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack"
+    "build": "webpack --progress --colors"
   },
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "json"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
   },
   "dependencies": {
     "lodash": "^4.17.4"
@@ -34,6 +42,7 @@
     "@types/node": "^8.0.54",
     "awesome-typescript-loader": "^3.4.1",
     "jest": "^21.2.1",
+    "path": "^0.12.7",
     "source-map-loader": "^0.2.3",
     "ts-jest": "^21.2.4",
     "typescript": "^2.6.2",
