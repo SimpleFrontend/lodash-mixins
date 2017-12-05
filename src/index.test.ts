@@ -1,4 +1,4 @@
-import * as _ from '.';
+import _ from '.';
 
 test('mixins can be imported', () => {
   expect(_).toBeDefined();

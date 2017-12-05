@@ -1,9 +1,9 @@
 import * as _ from 'lodash';
 import assignAsNew from './assignAsNew';
-import LodashMixins from './lodash-mixins.interface';
+import LoDashMixins from './lodash-mixins.interface';
 
-const mixins = <LodashMixins>_.mixin({
+_.mixin({
   assignAsNew
 });
 
-export = mixins;
+export default <LoDashMixins>_;

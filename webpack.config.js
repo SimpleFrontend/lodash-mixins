@@ -19,6 +19,6 @@ module.exports = {
       },
       { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' }
     ]
-  },
-  plugins: [new webpack.optimize.UglifyJsPlugin()]
+  }
+  // plugins: [new webpack.optimize.UglifyJsPlugin()]
 };
