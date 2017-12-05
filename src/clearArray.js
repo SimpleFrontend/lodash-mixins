@@ -1,9 +1,8 @@
 const clearArray = function(array) {
-  const newArray = array.slice();
-  while (newArray.length > 0) {
-    newArray.pop();
+  while (array.length > 0) {
+    array.pop();
   }
-  return newArray;
+  return array;
 };
 
 export default clearArray;
