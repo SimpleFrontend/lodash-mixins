@@ -1,4 +1,4 @@
-# LoDash Mixins
+# Just Another LoDash Mixins
 
 Some missing features in LoDash that I find useful.
 

@@ -1,15 +1,12 @@
 {
-  "name": "lodash-mixins",
+  "name": "just-another-lodash-mixins",
   "version": "0.0.1",
   "description": "Some useful features that Lo-Dash is missing",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hmch17/lodash-mixins.git"
   },
-  "keywords": [
-    "lodash",
-    "mixins"
-  ],
+  "keywords": ["lodash", "mixins"],
   "author": "Huang-Ming Chang (https://github.com/hmch17)",
   "license": "ISC",
   "bugs": {
@@ -19,12 +16,11 @@
   "main": "build/index.js",
   "scripts": {
     "build": "babel src -d build",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "npm run build"
   },
   "babel": {
-    "presets": [
-      "env"
-    ]
+    "presets": ["env"]
   },
   "dependencies": {
     "lodash": "^4.17.4"
