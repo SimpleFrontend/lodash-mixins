@@ -5,7 +5,7 @@ Some missing features in LoDash that I find useful.
 ## Installation
 
 ```shell
-npm install lodash-mixins --save
+npm install just-another-lodash-mixins --save
 ```
 
 ## Array manipulation
