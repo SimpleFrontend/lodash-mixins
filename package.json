@@ -1,6 +1,6 @@
 {
   "name": "just-another-lodash-mixins",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Some useful features that Lo-Dash is missing",
   "repository": {
     "type": "git",
