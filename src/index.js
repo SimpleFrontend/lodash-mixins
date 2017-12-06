@@ -1,6 +1,8 @@
-import { mixin } from 'lodash';
+import * as lodash from 'lodash';
 import clearArray from './clearArray';
 
-export const _ = mixin({
+lodash.mixin({
   clearArray
 });
+
+export const _ = lodash;
