@@ -6,10 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/hmch17/lodash-mixins.git"
   },
-  "keywords": [
-    "lodash",
-    "mixins"
-  ],
+  "keywords": ["lodash", "mixins"],
   "author": "Huang-Ming Chang (https://github.com/hmch17)",
   "license": "ISC",
   "bugs": {
@@ -20,13 +17,11 @@
   "scripts": {
     "build": "babel src -d build",
     "test": "jest",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "release": "np"
   },
   "babel": {
-    "presets": [
-      "env"
-    ]
+    "presets": ["env"]
   },
   "dependencies": {
     "lodash": "^4.17.4"
