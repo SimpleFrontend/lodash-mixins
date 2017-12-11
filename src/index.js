@@ -5,4 +5,6 @@ lodash.mixin({
   clearArray
 });
 
+export default lodash;
+
 export const _ = lodash;
