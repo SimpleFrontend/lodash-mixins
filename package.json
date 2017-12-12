@@ -6,10 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/hmch17/lodash-mixins.git"
   },
-  "keywords": [
-    "lodash",
-    "mixins"
-  ],
+  "keywords": ["lodash", "mixins"],
   "author": "Huang-Ming Chang (https://github.com/hmch17)",
   "license": "ISC",
   "bugs": {
@@ -17,16 +14,17 @@
   },
   "homepage": "https://github.com/hmch17/lodash-mixins#readme",
   "main": "build/index.js",
+  "lint-staged": {
+    "src/**/*.js": ["prettier --write", "git add"]
+  },
   "scripts": {
-    "build": "babel src -d build",
-    "test": "jest",
-    "prepare": "npm run build",
+    "pretty": "prettier --write \"src/**/*.js\"",
+    "test": "jest --no-cache",
+    "build": "lint-staged; npm test; babel src -d build",
     "release": "np"
   },
   "babel": {
-    "presets": [
-      "env"
-    ]
+    "presets": ["env"]
   },
   "dependencies": {
     "lodash": "^4.17.4"
@@ -34,7 +32,12 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "eslint": "4.13.1",
+    "eslint-plugin-prettier": "2.3.1",
+    "husky": "0.14.3",
     "jest": "^21.2.1",
-    "np": "^2.18.1"
+    "lint-staged": "6.0.0",
+    "np": "^2.18.1",
+    "prettier": "1.9.2"
   }
 }

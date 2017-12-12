@@ -1,5 +1,5 @@
-import * as lodash from 'lodash';
-import clearArray from './clearArray';
+import * as lodash from "lodash";
+import clearArray from "./clearArray";
 
 lodash.mixin({
   clearArray
