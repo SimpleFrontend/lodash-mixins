@@ -19,9 +19,9 @@
         "test": "jest",
         "prepare": "npm run build",
         "release": "np",
-        "pre-commit": "lint-staged"
+        "precommit": "lint-staged"
     },
-    "pre-commit": ["pre-commit"],
+    "pre-commit": ["precommit"],
     "lint-staged": {
         "*.{js,json,css,md}": ["prettier --write", "git add"]
     },
