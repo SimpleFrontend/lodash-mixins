@@ -1,40 +1,41 @@
 {
-  "name": "just-another-lodash-mixins",
-  "version": "0.0.3",
-  "description": "Some useful features that Lo-Dash is missing",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hmch17/lodash-mixins.git"
-  },
-  "keywords": [
-    "lodash",
-    "mixins"
-  ],
-  "author": "Huang-Ming Chang (https://github.com/hmch17)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hmch17/lodash-mixins/issues"
-  },
-  "homepage": "https://github.com/hmch17/lodash-mixins#readme",
-  "main": "build/index.js",
-  "scripts": {
-    "build": "babel src -d build",
-    "test": "jest",
-    "prepare": "npm run build",
-    "release": "np"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
-  "dependencies": {
-    "lodash": "^4.17.4"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "jest": "^21.2.1",
-    "np": "^2.18.1"
-  }
+    "name": "just-another-lodash-mixins",
+    "version": "0.0.3",
+    "description": "Some useful features that Lo-Dash is missing",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SimpleFrontend/lodash-mixins.git"
+    },
+    "keywords": ["lodash", "mixins"],
+    "author": "Huang-Ming Chang (https://github.com/SimpleFrontend)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hmch17/lodash-mixins/issues"
+    },
+    "homepage": "https://github.com/hmch17/lodash-mixins#readme",
+    "main": "build/index.js",
+    "scripts": {
+        "build": "babel src -d build",
+        "test": "jest",
+        "prepare": "npm run build",
+        "release": "np",
+        "pre-commit": "lint-staged"
+    },
+    "pre-commit": ["pre-commit"],
+    "lint-staged": {
+        "*.{js,json,css,md}": ["prettier --write", "git add"]
+    },
+    "dependencies": {
+        "lodash": "^4.17.4"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.0.0-beta.39",
+        "@babel/core": "^7.0.0-beta.39",
+        "@babel/preset-env": "^7.0.0-beta.39",
+        "husky": "^0.14.3",
+        "jest": "^21.2.1",
+        "lint-staged": "^6.1.0",
+        "np": "^2.18.1",
+        "pre-commit": "^1.2.2"
+    }
 }

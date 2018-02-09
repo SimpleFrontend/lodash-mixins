@@ -2,7 +2,7 @@ import * as lodash from 'lodash';
 import clearArray from './clearArray';
 
 lodash.mixin({
-  clearArray
+    clearArray
 });
 
 export const _ = lodash;
